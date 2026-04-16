@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dubai Movers & Packers – Safe Transport from Dubai & Sharjah Markets</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --blue: #1565C0;
+    --blue-dark: #0D47A1;
+    --blue-light: #E3F0FF;
+    --orange: #F57C00;
+    --orange-light: #FFF3E0;
+    --white: #ffffff;
+    --gray-light: #f5f7fa;
+    --gray-mid: #e2e8f0;
+    --gray-text: #64748b;
+    --dark: #1e293b;
+    --radius: 12px;
+    --shadow: 0 4px 24px rgba(21,101,192,0.10);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    color: var(--dark);
+    background: var(--white);
+    line-height: 1.6;
+  }
+
+  /* ── NAVBAR ── */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: var(--white);
+    border-bottom: 1.5px solid var(--gray-mid);
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+
+  .nav-logo .logo-icon {
+    width: 38px;
+    height: 38px;
+    background: var(--blue);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+  }
+
+  .nav-logo span {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--blue-dark);
+    line-height: 1.2;
+  }
+
+  .nav-logo span em {
+    display: block;
+    font-style: normal;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: var(--gray-text);
+    letter-spacing: 0.04em;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--dark);
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--blue); }
+
+  .nav-cta {
+    background: var(--orange);
+    color: white !important;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-weight: 600 !important;
+    transition: background 0.2s, transform 0.15s !important;
+  }
+
+  .nav-cta:hover { background: #e65100 !important; transform: translateY(-1px); }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 4px;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 24px;
+    height: 2.5px;
+    background: var(--dark);
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, #0D47A1 0%, #1976D2 50%, #1565C0 100%);
+    color: white;
+    padding: 80px 5% 70px;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    min-height: 88vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .hero-content { flex: 1; max-width: 580px; position: relative; z-index: 1; }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #fff;
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 20px;
+  }
+
+  .hero h1 span { color: #FFB300; }
+
+  .hero p {
+    font-size: 1.08rem;
+    line-height: 1.75;
+    opacity: 0.9;
+    margin-bottom: 36px;
+    max-width: 480px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .btn-primary {
+    background: var(--orange);
+    color: white;
+    padding: 14px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+    box-shadow: 0 4px 16px rgba(245,124,0,0.35);
+  }
+
+  .btn-primary:hover { background: #e65100; transform: translateY(-2px); box-shadow: 0 6px 24px rgba(245,124,0,0.45); }
+
+  .btn-whatsapp {
+    background: #25D366;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s, transform 0.15s;
+  }
+
+  .btn-whatsapp:hover { background: #1da851; transform: translateY(-2px); }
+
+  .hero-visual {
+    flex: 1;
+    max-width: 420px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .truck-card {
+    background: rgba(255,255,255,0.12);
+    border: 1.5px solid rgba(255,255,255,0.25);
+    border-radius: 20px;
+    padding: 32px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    width: 100%;
+  }
+
+  .truck-icon-big {
+    font-size: 90px;
+    display: block;
+    margin-bottom: 16px;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.2));
+  }
+
+  .truck-card h3 { font-size: 1.25rem; font-weight: 700; margin-bottom: 8px; color: white; }
+  .truck-card p { font-size: 0.88rem; opacity: 0.85; color: white; }
+
+  .hero-stats {
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+    justify-content: center;
+  }
+
+  .stat-item { text-align: center; }
+  .stat-num { font-size: 1.6rem; font-weight: 800; color: #FFB300; line-height: 1; }
+  .stat-lbl { font-size: 0.72rem; opacity: 0.8; color: white; text-transform: uppercase; letter-spacing: 0.04em; }
+
+  /* ── SECTIONS ── */
+  section { padding: 80px 5%; }
+
+  .section-label {
+    display: inline-block;
+    background: var(--blue-light);
+    color: var(--blue-dark);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+  }
+
+  .section-title {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 800;
+    color: var(--dark);
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+
+  .section-title span { color: var(--blue); }
+
+  .section-sub {
+    font-size: 1rem;
+    color: var(--gray-text);
+    max-width: 520px;
+    margin-bottom: 48px;
+  }
+
+  /* ── SERVICES ── */
+  .services-bg { background: var(--gray-light); }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+  }
+
+  .service-card {
+    background: white;
+    border-radius: var(--radius);
+    padding: 28px 24px;
+    border: 1.5px solid var(--gray-mid);
+    transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .service-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--blue);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+    transform-origin: left;
+  }
+
+  .service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: var(--blue); }
+  .service-card:hover::after { transform: scaleX(1); }
+
+  .service-icon {
+    width: 54px;
+    height: 54px;
+    background: var(--blue-light);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: var(--blue);
+    margin-bottom: 16px;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .service-card:hover .service-icon { background: var(--blue); color: white; }
+
+  .service-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; color: var(--dark); }
+  .service-card p { font-size: 0.9rem; color: var(--gray-text); line-height: 1.6; }
+
+  /* ── VEHICLE SECTION ── */
+  .vehicle-section { background: white; }
+
+  .vehicle-card {
+    background: var(--blue-dark);
+    color: white;
+    border-radius: 20px;
+    padding: 48px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .vehicle-info { flex: 1; min-width: 260px; }
+  .vehicle-info h2 { font-size: 1.9rem; font-weight: 800; margin-bottom: 12px; line-height: 1.2; }
+  .vehicle-info h2 span { color: #FFB300; }
+  .vehicle-info p { opacity: 0.88; margin-bottom: 20px; font-size: 0.97rem; }
+
+  .vehicle-specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .spec-badge {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 0.83rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .vehicle-visual {
+    flex: 1;
+    min-width: 260px;
+    text-align: center;
+  }
+
+  .canter-icon { font-size: 110px; display: block; filter: drop-shadow(0 6px 20px rgba(0,0,0,0.3)); }
+
+  /* ── WHY CHOOSE US ── */
+  .why-bg { background: var(--gray-light); }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  .why-card {
+    background: white;
+    border-radius: var(--radius);
+    padding: 28px 22px;
+    text-align: center;
+    border: 1.5px solid var(--gray-mid);
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+
+  .why-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+
+  .why-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--orange-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    font-size: 24px;
+    color: var(--orange);
+  }
+
+  .why-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
+  .why-card p { font-size: 0.88rem; color: var(--gray-text); }
+
+  /* ── HOW IT WORKS ── */
+  .how-it-works { background: white; }
+
+  .steps-row {
+    display: flex;
+    gap: 0;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .step {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+  }
+
+  .step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    right: -2px;
+    width: 4px;
+    height: 4px;
+    background: var(--gray-mid);
+    border-radius: 50%;
+  }
+
+  .step-num {
+    width: 56px;
+    height: 56px;
+    background: var(--blue);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 800;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .step h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; color: var(--dark); }
+  .step p { font-size: 0.88rem; color: var(--gray-text); }
+
+  .steps-line {
+    position: relative;
+    margin-bottom: 40px;
+    height: 2px;
+    background: var(--gray-mid);
+    display: none;
+  }
+
+  /* ── CONTACT ── */
+  .contact-section {
+    background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 100%);
+    color: white;
+  }
+
+  .contact-section .section-label { background: rgba(255,255,255,0.15); color: white; }
+  .contact-section .section-title { color: white; }
+  .contact-section .section-title span { color: #FFB300; }
+  .contact-section .section-sub { color: rgba(255,255,255,0.82); }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .contact-card {
+    background: rgba(255,255,255,0.10);
+    border: 1.5px solid rgba(255,255,255,0.2);
+    border-radius: var(--radius);
+    padding: 28px 24px;
+    text-align: center;
+    transition: background 0.2s, transform 0.2s;
+  }
+
+  .contact-card:hover { background: rgba(255,255,255,0.17); transform: translateY(-3px); }
+
+  .contact-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px;
+    font-size: 22px;
+    color: white;
+  }
+
+  .contact-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 4px; color: white; }
+  .contact-card .role { font-size: 0.82rem; opacity: 0.75; color: white; margin-bottom: 18px; }
+
+  .contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 11px 20px;
+    border-radius: 8px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.15s, opacity 0.15s;
+    margin-bottom: 10px;
+    color: white;
+  }
+
+  .contact-btn:hover { transform: translateY(-1px); opacity: 0.92; }
+  .btn-call { background: var(--blue); border: 1.5px solid rgba(255,255,255,0.3); }
+  .btn-wa { background: #25D366; }
+
+  .contact-whatsapp-big {
+    background: rgba(255,255,255,0.10);
+    border: 1.5px solid rgba(255,255,255,0.2);
+    border-radius: var(--radius);
+    padding: 36px 24px;
+    text-align: center;
+    grid-column: 1 / -1;
+  }
+
+  .contact-whatsapp-big p { opacity: 0.85; color: white; margin-bottom: 20px; font-size: 0.95rem; }
+  .contact-whatsapp-big h3 { font-size: 1.3rem; font-weight: 700; color: white; margin-bottom: 8px; }
+
+  .wa-big-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #25D366;
+    color: white;
+    padding: 16px 36px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.15s;
+    box-shadow: 0 4px 16px rgba(37,211,102,0.35);
+  }
+
+  .wa-big-btn:hover { background: #1da851; transform: translateY(-2px); }
+  .wa-big-btn i { font-size: 1.3rem; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--dark);
+    color: rgba(255,255,255,0.75);
+    padding: 36px 5%;
+    text-align: center;
+    font-size: 0.88rem;
+  }
+
+  footer a { color: #93c5fd; text-decoration: none; }
+  footer a:hover { color: white; }
+  footer .footer-brand { font-size: 1rem; font-weight: 700; color: white; margin-bottom: 8px; }
+
+  /* ── ANIMATIONS ── */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+  /* ── MOBILE NAV ── */
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 16px 5%;
+    border-bottom: 1.5px solid var(--gray-mid);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    z-index: 998;
+    gap: 4px;
+  }
+
+  .mobile-menu a {
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--dark);
+    padding: 10px 0;
+    border-bottom: 1px solid var(--gray-mid);
+    display: block;
+  }
+
+  .mobile-menu a:last-child { border-bottom: none; color: var(--orange); font-weight: 700; }
+  .mobile-menu.open { display: flex; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+
+    .hero {
+      flex-direction: column;
+      padding: 48px 5% 56px;
+      text-align: center;
+      min-height: auto;
+    }
+
+    .hero-content { max-width: 100%; }
+    .hero p { margin-left: auto; margin-right: auto; }
+    .hero-buttons { justify-content: center; }
+    .hero-visual { max-width: 300px; width: 100%; }
+
+    .vehicle-card { padding: 28px; flex-direction: column; text-align: center; }
+    .vehicle-visual .canter-icon { font-size: 72px; }
+
+    .steps-row { flex-direction: column; align-items: center; }
+    .step:not(:last-child)::after { display: none; }
+    .step { padding: 0; width: 100%; max-width: 320px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">
+    <div class="logo-icon"><i class="fas fa-truck-moving"></i></div>
+    <span>Dubai Movers <em>& Packers</em></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#vehicle">Our Vehicle</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#contact" class="nav-cta">Book Now</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#vehicle" onclick="closeMenu()">Our Vehicle</a>
+  <a href="#why" onclick="closeMenu()">Why Us</a>
+  <a href="#how" onclick="closeMenu()">How It Works</a>
+  <a href="#contact" onclick="closeMenu()">Book Now →</a>
+</div>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content fade-in">
+    <div class="hero-badge"><i class="fas fa-map-marker-alt"></i> Dubai & Sharjah Markets</div>
+    <h1>Reliable <span>Movers & Packers</span> in Dubai</h1>
+    <p>We help you safely pack and transport your purchased goods from Dubai and Sharjah markets to your desired destination — with care, speed, and efficiency you can trust.</p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn-primary"><i class="fas fa-calendar-check"></i> Book Now</a>
+      <a href="https://wa.me/923325343939" target="_blank" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+    </div>
+  </div>
+  <div class="hero-visual fade-in">
+    <div class="truck-card">
+      <span class="truck-icon-big">🚛</span>
+      <h3>Mitsubishi Canter Ready</h3>
+      <p>Professional transport vehicle for all your market purchases</p>
+      <div class="hero-stats">
+        <div class="stat-item"><div class="stat-num">500+</div><div class="stat-lbl">Happy Clients</div></div>
+        <div class="stat-item"><div class="stat-num">2</div><div class="stat-lbl">Cities Covered</div></div>
+        <div class="stat-item"><div class="stat-num">24/7</div><div class="stat-lbl">Available</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SERVICES -->
+<section id="services" class="services-bg">
+  <div class="fade-in">
+    <div class="section-label">What We Offer</div>
+    <h2 class="section-title">Our <span>Services</span></h2>
+    <p class="section-sub">From market pickup to doorstep delivery — we handle every step of your move with professional care.</p>
+  </div>
+  <div class="services-grid fade-in">
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-couch"></i></div>
+      <h3>Furniture Moving</h3>
+      <p>Safe handling and transport of all types of furniture — sofas, beds, cabinets, dining sets — from Dubai and Sharjah markets.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-store"></i></div>
+      <h3>Local Market Pickup</h3>
+      <p>We pick up your purchased items directly from Dubai's Dragon Mart, Sharjah markets, and all major trading areas.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-box"></i></div>
+      <h3>Packing & Loading</h3>
+      <p>Professional packing with high-quality materials — bubble wrap, straps, and blankets — to ensure zero damage during transit.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-shipping-fast"></i></div>
+      <h3>Safe Transportation</h3>
+      <p>Your goods travel securely in our covered Mitsubishi Canter, protecting them from weather, dust, and road bumps.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-home"></i></div>
+      <h3>Door-to-Door Delivery</h3>
+      <p>We deliver straight to your home or office — unloading and placing items exactly where you need them.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-tv"></i></div>
+      <h3>Electronics Transport</h3>
+      <p>Carefully secured transport for TVs, refrigerators, washing machines, and all electronics with extra protective padding.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- VEHICLE SECTION -->
+<section id="vehicle" class="vehicle-section">
+  <div class="vehicle-card fade-in">
+    <div class="vehicle-info">
+      <div class="section-label" style="background:rgba(255,255,255,0.15);color:white;">Our Fleet</div>
+      <h2>We Use the <span>Mitsubishi Canter</span></h2>
+      <p>The Mitsubishi Canter is the most trusted and widely used cargo vehicle in the UAE. Built for reliability, load capacity, and navigating the streets of Dubai and Sharjah — it's the ideal truck for your goods.</p>
+      <div class="vehicle-specs">
+        <div class="spec-badge"><i class="fas fa-weight-hanging"></i> Heavy Load Capacity</div>
+        <div class="spec-badge"><i class="fas fa-shield-alt"></i> Covered & Secure</div>
+        <div class="spec-badge"><i class="fas fa-road"></i> UAE Roads Optimized</div>
+        <div class="spec-badge"><i class="fas fa-snowflake"></i> Weather Protected</div>
+        <div class="spec-badge"><i class="fas fa-check-circle"></i> Regularly Maintained</div>
+      </div>
+    </div>
+    <div class="vehicle-visual">
+      <span class="canter-icon">🚚</span>
+      <p style="opacity:0.85;font-size:1rem;font-weight:600;color:white;">Mitsubishi Canter</p>
+      <p style="opacity:0.7;font-size:0.85rem;color:white;">Dubai & Sharjah Ready</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- WHY CHOOSE US -->
+<section id="why" class="why-bg">
+  <div class="fade-in">
+    <div class="section-label">Why Choose Us</div>
+    <h2 class="section-title">We Deliver <span>Excellence</span></h2>
+    <p class="section-sub">Thousands of customers trust us with their valuable purchases. Here's why.</p>
+  </div>
+  <div class="why-grid fade-in">
+    <div class="why-card">
+      <div class="why-icon"><i class="fas fa-tag"></i></div>
+      <h3>Affordable Pricing</h3>
+      <p>Competitive rates with no hidden fees. You know exactly what you pay before we start.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon"><i class="fas fa-bolt"></i></div>
+      <h3>Fast Service</h3>
+      <p>Same-day and next-day delivery available. We work on your schedule, not ours.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon"><i class="fas fa-hands"></i></div>
+      <h3>Professional Handling</h3>
+      <p>Trained crew handles your goods with the utmost care — no scratches, no damage.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon"><i class="fas fa-lock"></i></div>
+      <h3>Safe & Secure Delivery</h3>
+      <p>Every item is secured, tracked, and delivered in perfect condition to your door.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon"><i class="fas fa-clock"></i></div>
+      <h3>24/7 Availability</h3>
+      <p>Available any time of day or night. Weekends and holidays are no problem for us.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon"><i class="fas fa-star"></i></div>
+      <h3>Trusted by 500+ Clients</h3>
+      <p>Our reputation is built on reliability, honesty, and consistently excellent service.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- HOW IT WORKS -->
+<section id="how" class="how-it-works">
+  <div class="fade-in">
+    <div class="section-label">Simple Process</div>
+    <h2 class="section-title">How It <span>Works</span></h2>
+    <p class="section-sub">Moving your goods has never been easier. Just four simple steps.</p>
+  </div>
+  <div class="steps-row fade-in">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h3>Contact Us</h3>
+      <p>Call or WhatsApp us with details about your goods and pickup location.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h3>Get a Quote</h3>
+      <p>We give you an instant, transparent quote — no surprises, no hidden costs.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h3>We Pick Up</h3>
+      <p>Our team arrives at the Dubai or Sharjah market, packs, and loads your goods.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <h3>Safe Delivery</h3>
+      <p>Your items are delivered to your door safely, on time, every time.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="fade-in">
+    <div class="section-label">Get In Touch</div>
+    <h2 class="section-title">Ready to <span>Book?</span></h2>
+    <p class="section-sub">Reach out to us right now — our team is available 24/7 to assist you.</p>
+  </div>
+
+  <div class="contact-grid fade-in">
+    <div class="contact-card">
+      <div class="contact-avatar"><i class="fas fa-user"></i></div>
+      <h3>Muhammad Iqbal</h3>
+      <p class="role">Senior Transport Manager</p>
+      <a href="tel:+971555825193" class="contact-btn btn-call"><i class="fas fa-phone"></i> +971 55 582 5193</a>
+      <a href="https://wa.me/971555825193" target="_blank" class="contact-btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+    <div class="contact-card">
+      <div class="contact-avatar"><i class="fas fa-user-tie"></i></div>
+      <h3>Muhammad Younis</h3>
+      <p class="role">Operations Coordinator</p>
+      <a href="tel:+9710527417548" class="contact-btn btn-call"><i class="fas fa-phone"></i> +971 052 741 7548</a>
+      <a href="https://wa.me/9710527417548" target="_blank" class="contact-btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+    <div class="contact-whatsapp-big">
+      <h3>Prefer WhatsApp? Message Us Directly</h3>
+      <p>Send us your requirements, photos of your goods, or pickup location — we'll get back to you instantly.</p>
+      <a href="https://wa.me/923325343939" target="_blank" class="wa-big-btn">
+        <i class="fab fa-whatsapp"></i> Chat on WhatsApp Now
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand"><i class="fas fa-truck-moving"></i> Dubai Movers & Packers</div>
+  <p>Serving Dubai & Sharjah markets with professional packing and transport services.</p>
+  <p style="margin-top:10px;">
+    <a href="tel:+971555825193">+971 55 582 5193</a> &nbsp;|&nbsp;
+    <a href="https://wa.me/923325343939" target="_blank">WhatsApp</a>
+  </p>
+  <p style="margin-top:14px;font-size:0.8rem;opacity:0.55;">&copy; 2025 Dubai Movers & Packers. All rights reserved.</p>
+</footer>
+
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+
+  function closeMenu() {
+    document.getElementById('mobileMenu').classList.remove('open');
+  }
+
+  document.addEventListener('click', function(e) {
+    const menu = document.getElementById('mobileMenu');
+    const hamburger = document.getElementById('hamburger');
+    if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
+      menu.classList.remove('open');
+    }
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
